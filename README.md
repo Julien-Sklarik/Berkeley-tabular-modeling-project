@@ -14,7 +14,6 @@ I built a compact pipeline that classifies income on the Adult dataset while kee
 
 
 #Quick start:
-
 1 make setup
 
 2 make run
@@ -36,7 +35,6 @@ I built a compact pipeline that classifies income on the Adult dataset while kee
 
 
 #Technical choices
-
 1 Data loading comes from OpenML on first run and is cached to data or you can drop adult.csv into that folder
 
 2 All preprocessing is inside a scikit learn pipeline to keep fitting scoped to folds
