@@ -11,6 +11,8 @@ I built a compact pipeline that classifies income on the Adult dataset while kee
 
 3 I report permutation importances on raw columns for interpretability without peeking
 
+
+
 #Quick start:
 
 1 make setup
@@ -31,12 +33,19 @@ I built a compact pipeline that classifies income on the Adult dataset while kee
 
 ![Example feature importances](assets/permutation_importances_example.png)
 
+
+
 #Technical choices
 
 1 Data loading comes from OpenML on first run and is cached to data or you can drop adult.csv into that folder
+
 2 All preprocessing is inside a scikit learn pipeline to keep fitting scoped to folds
+
 3 Cross validation uses stratified folds and the grid is deliberately small so runs are fast and reproducible
+
 4 I keep plotting and reporting minimal so the artifacts are easy to skim in a code review
+
+
 
 #Contact
 If you want to discuss the modeling choices or how I would adapt this structure to alpha research send a note.
